@@ -404,17 +404,17 @@
       }
       .switch-panel .hint { margin-top: 0.4rem; color: var(--steel-on-dark); font-size: 0.95rem; }
       .plate {
-        margin-top: 1.5rem;
+        margin-top: 1.1rem;
         display: flex;
         align-items: center;
-        gap: 1.1rem;
+        gap: 0.75rem;
       }
       button.switch {
         appearance: none;
         border: 2px solid #4a4e54;
         background: #101114;
-        width: 64px;
-        height: 108px;
+        width: 56px;
+        height: 84px;
         border-radius: 8px;
         position: relative;
         cursor: pointer;
@@ -425,16 +425,16 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        width: 30px;
-        height: 42px;
+        width: 26px;
+        height: 32px;
         border-radius: 4px;
         background: #8b9096;
-        bottom: 8px;
+        bottom: 6px;
         transition: bottom 0.18s ease, top 0.18s ease, background 0.18s ease;
       }
       button.switch[aria-checked="true"] .lever {
         bottom: auto;
-        top: 8px;
+        top: 6px;
         background: var(--amber);
       }
       .plate-labels {
@@ -443,8 +443,12 @@
         letter-spacing: 0.16em;
         font-size: 0.95rem;
         color: var(--steel-on-dark);
-        display: grid;
-        gap: 1.55rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 84px;
+        padding: 5px 0;
+        box-sizing: border-box;
       }
       .plate-labels .state-on { color: #f0ede6; font-weight: 700; }
       .switch-panel.is-on .plate-labels .state-on { color: var(--amber); }
